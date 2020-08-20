@@ -72,10 +72,18 @@ const Faqtory = function () {
       this.length++
       this.questions.push(obj)
     },
-    answerQuestion: function(){},
-  }
-}
+    answerQuestion: function(id, text){
 
+      for (const obj of this.questions) {
+        if (obj.id === id && obj.answered === false) {
+          obj.answer = text
+          obj.answered = true
+        }
+      }
+     }
+
+}
+}
 
 
 
