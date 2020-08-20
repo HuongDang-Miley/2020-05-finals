@@ -68,8 +68,8 @@ const Faqtory = function () {
         answered: false,
         id: this.length
       }
-      
-      length++
+
+      this.length++
       this.questions.push(obj)
     },
     answerQuestion: function(){},
